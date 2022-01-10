@@ -1,0 +1,41 @@
+
+
+#main{
+    height: 100%;
+}
+
+#main h1{
+    color: white;
+    text-align: center;
+}
+
+#section{
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    border-radius: 50px;
+    background-color: gainsboro;
+}
+
+#section img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: none;
+    margin: auto;
+}
+
+#horario{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15%;
+}
+
+footer{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1% auto;
+}

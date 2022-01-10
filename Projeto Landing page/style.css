@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* p{
+    font-size: 1.3rem;
+}
+
+header{
+    width: 100%;
+    height: 53vh;
+    background-image: url(Programação.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#text{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}
+
+#text p{
+    max-width: 75%;
+}
+
+#ReadMore{
+    width: 150px;
+    height: 15%;
+    border: solid 1px grey;
+    background-color: #3b3b3b;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#ReadMore:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #3b3b3b;
+    transition: .5s;
+}
+
+main{
+    width: 100%;
+    height: 90%;
+}
+
+main #WebApplicationDevelopment{
+    text-align: center;
+    height: 28.5vh;
+    padding: 2vh 0;
+    background-color: #eaeaea;
+}
+
+#WebApplicationDevelopment h1{
+    padding: 1vh 0;
+}
+
+#WebApplicationDevelopment p{
+    max-width: 60%;
+    margin: auto;
+    line-height: 25px;
+    padding: 1vh 0;
+    columns: 2;
+}
+
+#WebMobileTech{
+    background-color: #333;
+    width: 100%;
+    height: 62.5vh;
+    padding: 2.5% 4%;
+    display: flex;
+    gap: 25px;
+}
+
+#Wep-Development{
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    line-height: 25px;
+    text-align: center;
+}
+
+#Wep-Development img{
+    width: 100%;
+    height: 30%;
+}
+
+#Wep-Development h2{
+    padding: 5vh 1vh;
+}
+
+#Wep-Development p{
+    padding: 0 3vh;
+    height: 100%;
+}
+
+#Mobile-Applications{
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    line-height: 25px;
+    text-align: center;
+}
+
+#Mobile-Applications img{
+    width: 100%;
+    height: 30%;
+}
+
+#Mobile-Applications h2{
+    padding: 5vh 1vh;
+}
+
+#Mobile-Applications p{
+    padding: 0 3vh;
+    height: 100%;
+}
+
+#Tech-Marketing{
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    line-height: 25px;
+    text-align: center;
+}
+
+#Tech-Marketing img{
+    width: 100%;
+    height: 30%;
+}
+
+#Tech-Marketing h2{
+    padding: 5vh 1vh;
+}
+
+#Tech-Marketing p{
+    padding: 0 3vh;
+    height: 100%;
+}
+
+#FAQ{
+    height: 25vh;
+    background-color: #eaeaea;
+}
+
+#FAQ > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#FAQ > div > p{
+    text-align: center;
+    max-width: 70%;
+    line-height: 25px;
+}
+
+#Contact-About{
+    height: 35vh;
+    display: flex;
+    color: white;
+}
+
+#contact{
+    width: 50%;
+    height: 100%;
+    background-color: #2690d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    gap: 50px;
+}
+
+#contact p{
+    
+    width: 70%;
+}
+
+#about{
+    width: 50%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    gap: 50px;
+}
+
+#about p{
+    width: 70%;
+}
+
+footer {
+    color: white;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    main #WebApplicationDevelopment{
+        height: 35vh;
+    }
+
+    #WebApplicationDevelopment p{
+        width: 100%;
+        columns: 1;
+    }
+
+    #WebMobileTech{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #Wep-Development{
+        width: 100%;
+    }
+
+    #Mobile-Applications{
+        width: 100%;
+    }
+
+    #Tech-Marketing{
+        width: 100%;
+    }
+
+    #Wep-Development p, #Mobile-Applications p, #Tech-Marketing p{
+        padding: 3vh;
+    }
+
+    #Contact-About{
+        flex-direction: column;
+    }
+
+    #contact, #about{
+        width: 100%;
+        padding: 200px 0;
+    }
+    
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 50vh;
+    }
+}

@@ -1,0 +1,149 @@
+@keyframes animarMenu{
+    from{
+        transition: 0s;
+    }
+
+    to{
+        transition: 1s;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    height: 10vh;
+    padding: 0 5%;
+    background-color: aquamarine;
+    box-shadow: black 0px 0px 3px;
+}
+
+#nav-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    display: flex;
+    gap: .1px;
+}
+
+#menu li{
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu a:hover{
+    background-color: cyan;
+    transition: .5s;
+}
+
+@media(max-width: 768px){
+
+    #menu-hamburguer{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 1%;
+        padding: 3vh;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #menu-hamburguer:hover{
+        background-color: aqua;
+        transition: 1s;
+    }
+
+    .btn-hamburguer{
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        transition: 1s;
+    }
+
+    .menu-hamburguer-animated > .btn-hamburguer1{
+        transform: rotate(135deg);
+        margin-bottom: -10px;
+        transition: 1s;
+    }
+
+    .menu-hamburguer-animated > .btn-hamburguer2{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .menu-hamburguer-animated > .btn-hamburguer3{
+        transform: rotate(-135deg);
+        margin-top: -10px;
+        transition: 1s;
+    }
+
+    #menu{
+        background-color: aquamarine;
+        height: 90vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+        transition: 1s;
+        transform: translateY(100%);
+        position: fixed;
+        right: 0;
+        top: 10vh;
+    }
+
+    #menu li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    #menu li:hover{
+        background-color: aqua;
+    }
+
+    #menu a{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        border-radius: 0;
+    }
+
+    #menu a:hover{
+        border-bottom: 2.5px solid darkcyan;
+        transition: .3s;
+    }
+
+    #nav-list.nav-list-active #menu{
+        transform: translateY(0);
+    }
+}
